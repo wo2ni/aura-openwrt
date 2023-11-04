@@ -1,6 +1,5 @@
 include $(TOPDIR)/rules.mk
 
-
 PKG_NAME:=zstd
 PKG_VERSION:=1.5.4
 
