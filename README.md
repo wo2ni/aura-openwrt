@@ -13,3 +13,16 @@
 
 ## 说明:
 1. 固件默认支持并启用IPV6支持.
+2. 编译生成的固件不压缩,因为支持原汁原味.
+
+## X86 AP热点开启方法.
+1,编译固件时选中 Network->WirelessAPD ->Hostapd
+hostapd-common
+
+
+## feeds 脚本使用方法.
+```
+只针对theme 升级,安装.
+./scripts/feeds update -a theme
+./scripts/feeds install -a theme
+```
