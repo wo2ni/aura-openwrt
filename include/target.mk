@@ -59,7 +59,8 @@ DEFAULT_PACKAGES.router:=\
 	iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi \
 	ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot \
 	luci-app-wol curl ca-certificates luci-app-wireguard \
-	ipv6helper ip6tables-extra  ip6tables-mod-nat uuidgen luci-app-turboacc
+	ipv6helper ip6tables-extra  ip6tables-mod-nat uuidgen luci-app-turboacc \
+	openssh-sftp-client openssh-sftp-server vim bash
 
 ifneq ($(DUMP),)
   all: dumpinfo
