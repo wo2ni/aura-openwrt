@@ -20,7 +20,9 @@
 hostapd-common
 
 
-## feeds 脚本使用方法.
+## theme 配置说明.
+Theme均来自互联网,其中argon主题冲突,所以此仓库会重名argon
+一份为luci-theme-argon和luci-theme-lede-argon
 ```
 只针对theme 升级,安装.
 ./scripts/feeds update -a theme
