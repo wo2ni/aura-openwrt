@@ -21,6 +21,11 @@
 1,编译固件时选中 Network->WirelessAPD ->Hostapd
 hostapd-common
 
+## 默认无线密码.
+SSID:  Aura
+Wpa2/psk
+KEY: 88888888
+
 
 ## theme 配置说明.
 Theme均来自互联网,其中argon主题冲突,所以此仓库会重名argon
