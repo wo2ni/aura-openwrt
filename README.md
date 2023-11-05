@@ -22,7 +22,7 @@
 hostapd-common
 
 ## 默认无线密码.
-SSID:  Aura
+SSID:  Aura-XXX
 Wpa2/psk
 KEY: 88888888
 
