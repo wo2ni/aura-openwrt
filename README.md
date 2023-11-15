@@ -38,3 +38,17 @@ Theme均来自互联网,其中argon主题冲突,所以此仓库会重名argon
 ./scripts/feeds update -a theme
 ./scripts/feeds install -a theme
 ```
+
+
+## 禁止DHCP lan.
+```
+uci set dhcp.lan.ignore=1
+uci commit dhcp
+```
+
+
+## 禁止自动挂载磁盘.
+```
+uci set fstab.@global[0].anon_mount=0
+uci set fstab.@global[0].auto_mount=0
+```
