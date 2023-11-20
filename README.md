@@ -52,3 +52,5 @@ uci commit dhcp
 uci set fstab.@global[0].anon_mount=0
 uci set fstab.@global[0].auto_mount=0
 ```
+
+## 编译说明.
