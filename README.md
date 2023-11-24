@@ -29,6 +29,9 @@ SSID:  Aura-XXX
 Wpa2/psk
 KEY: 88888888
 
+## 默认Lan侧ip.
+172.17.17.1/24
+
 
 ## theme 配置说明.
 Theme均来自互联网,其中argon主题冲突,所以此仓库会重名argon
