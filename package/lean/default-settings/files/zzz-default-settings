@@ -7,7 +7,11 @@ uci set system.@system[0].timezone=CST-8
 uci set system.@system[0].zonename=Asia/Shanghai
 uci commit system
 
-uci set fstab.@global[0].anon_mount=1
+#启用匿名挂载，禁止自动挂载.
+#uci set fstab.@global[0].anon_mount=1
+uci set fstab.@global[0].anon_mount=0
+uci set fstab.@global[0].auto_mount=0
+
 uci commit fstab
 
 rm -f /usr/lib/lua/luci/view/admin_status/index/mwan.htm
@@ -58,6 +62,11 @@ echo "DISTRIB_DESCRIPTION='OpenWrt '" >> /etc/openwrt_release
 
 sed -i '/log-facility/d' /etc/dnsmasq.conf
 echo "log-facility=/dev/null" >> /etc/dnsmasq.conf
+
+# drobear ssh public key.
+cat << "EOF" >>/etc/dropbear/authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDReconVNvAhM7MtKHL0G6iOikJbFJ5Yj5RJsFjQkH5q7mXgmXvoTna+PaVrijxo2yBtOqEvQddWExW/ETnaZP3wvYrKX8Al7lJLG/ntYu/QPHE56uG0itwLEJ0lib2dBYeATx5GAzg7Xh34VjHPvWw/4lb6V4n/n2T4w4807IlLwMGfF3+JWgjIX0dz/OD+LucFljj7Ig0MaLE5xbJMNtK3wTgQ1wHmpsUWftP6sHWeqBqzQHlJc4bihvoxVXEZumukGZ7h0lWyx9iKcSMvQXF/MYGnP8mubKSCHXhk6d8hSyC+UHROAM8IQFNR2WcK9on+nCFVMBLXThpMEaneo4nDcotZuWPTx+NgRpxAROJpJsCF5dP+JWFESrPdxgMIOk4l5+MVHHoJXAIstEhOn+8hVnWxxig4Lwa3E+v+9OPvWicLB6TG1NyBUqQV++sr6Lp9bhR8dBJ/QnM9HnooHVMGn9lZFjCcjaar6Xs9xoalb1/Gbb8UHnRJJHN10Lk47M=
+EOF
 
 rm -rf /tmp/luci-modulecache/
 rm -f /tmp/luci-indexcache
