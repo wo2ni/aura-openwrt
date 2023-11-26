@@ -66,8 +66,6 @@ echo "log-facility=/dev/null" >> /etc/dnsmasq.conf
 # Config Bash PS1
 echo 'source /root/.bashrc' >>/etc/bash.bashrc
 cat << "EOF" >/root/.bashrc
-PS1='\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\W\[\e[m\]\[\e[32m\]]\[\e[0m\] \$\[\e[m\] '
-
 #--Openwrt Bash Config--#
 PS1='\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\W\[\e[m\]\[\e[32m\]]\[\e[0m\] \$\[\e[m\] '
 alias ls='ls --color=auto'
