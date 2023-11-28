@@ -41,7 +41,6 @@ Theme均来自互联网,其中argon主题冲突,所以此仓库会重名argon
 ./scripts/feeds install -a theme
 ```
 
-
 ## 禁止DHCP lan.
 ```
 uci set dhcp.lan.ignore=1
