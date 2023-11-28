@@ -14,7 +14,7 @@ include $(INCLUDE_DIR)/target.mk
 DEFAULT_PACKAGES += \
 	kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom \
 	kmod-leds-gpio kmod-gpio-button-hotplug \
-        autocore-arm wpad-openssl zram-swap \
+    autocore-arm wpad-openssl zram-swap \
 	ath11k-firmware-ipq8074 kmod-qca-nss-dp \
 	kmod-ath11k-ahb kmod-qca-nss-drv-64 \
 	kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 \
