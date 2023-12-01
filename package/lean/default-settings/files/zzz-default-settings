@@ -7,10 +7,13 @@ uci set system.@system[0].timezone=CST-8
 uci set system.@system[0].zonename=Asia/Shanghai
 uci commit system
 
-#启用匿名挂载，禁止自动挂载.
-#uci set fstab.@global[0].anon_mount=1
-uci set fstab.@global[0].anon_mount=0
-uci set fstab.@global[0].auto_mount=0
+# 禁止自动挂在，禁止匿名挂载.
+#uci set fstab.@global[0].anon_mount=0
+#uci set fstab.@global[0].auto_mount=0
+
+# 启用匿名挂在，启用自动挂载.
+uci set fstab.@global[0].anon_mount=1
+uci set fstab.@global[0].auto_mount=1
 
 uci commit fstab
 
