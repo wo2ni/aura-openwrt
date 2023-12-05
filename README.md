@@ -54,15 +54,7 @@ uci set fstab.@global[0].anon_mount=0
 uci set fstab.@global[0].auto_mount=0
 ```
 
-## 编译说明.
-
-
-## 一些 uci命令.
-```
-```
-
-
-## 恢复出场设置.
+## 恢复出厂设置.
 ```
 firstboot
 y
@@ -80,4 +72,10 @@ reboot
 uci set firewall.@zone[0].network='lan wg0'
 uci commit firewall
 /etc/init.d/firewall restart
+```
+
+### 添加某接口到wan侧防火墙区域.
+```
+uci set firewall.@zone[1].network='wan wan6 wwan0'
+uci commit firewall
 ```
