@@ -55,3 +55,16 @@ uci set fstab.@global[0].auto_mount=0
 ```
 
 ## 编译说明.
+
+
+## 一些 uci命令.
+```
+```
+
+
+## 恢复出场设置.
+```
+firstboot
+y
+reboot
+```
