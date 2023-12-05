@@ -68,3 +68,16 @@ firstboot
 y
 reboot
 ```
+
+### 升级固件.
+```
+ sysupgrade -v -n  /tmp/your_firmware_image.bin
+```
+
+
+### 添加某接口到lan侧防火墙区域.
+```
+uci set firewall.@zone[0].network='lan wg0'
+uci commit firewall
+/etc/init.d/firewall restart
+```
