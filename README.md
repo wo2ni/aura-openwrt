@@ -79,3 +79,5 @@ uci commit firewall
 uci set firewall.@zone[1].network='wan wan6 wwan0'
 uci commit firewall
 ```
+
+### 常用的uci命令.
