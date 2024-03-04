@@ -1,4 +1,6 @@
-# 此项目来自 Lean LEDE 源码仓库分叉
+![Aura Openwrt logo](include/logo.png)
+
+# 此项目来自 Openwrt 源码仓库分叉
 
 ## 特别提示
 
@@ -20,7 +22,7 @@
 2. 编译生成的固件不压缩,因为支持原汁原味.
 
 ## X86 AP热点开启方法.
-1,编译固件时选中 Network->WirelessAPD ->Hostapd
+Network->WirelessAPD ->Hostapd
 hostapd-common
 
 ## 默认无线密码.
@@ -40,44 +42,3 @@ Theme均来自互联网,其中argon主题冲突,所以此仓库会重名argon
 ./scripts/feeds update -a theme
 ./scripts/feeds install -a theme
 ```
-
-## 禁止DHCP lan.
-```
-uci set dhcp.lan.ignore=1
-uci commit dhcp
-```
-
-
-## 禁止自动挂载磁盘.
-```
-uci set fstab.@global[0].anon_mount=0
-uci set fstab.@global[0].auto_mount=0
-```
-
-## 恢复出厂设置.
-```
-firstboot
-y
-reboot
-```
-
-### 升级固件.
-```
- sysupgrade -v -n  /tmp/your_firmware_image.bin
-```
-
-
-### 添加某接口到lan侧防火墙区域.
-```
-uci set firewall.@zone[0].network='lan wg0'
-uci commit firewall
-/etc/init.d/firewall restart
-```
-
-### 添加某接口到wan侧防火墙区域.
-```
-uci set firewall.@zone[1].network='wan wan6 wwan0'
-uci commit firewall
-```
-
-### 常用的uci命令
