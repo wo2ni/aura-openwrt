@@ -60,7 +60,7 @@ DEFAULT_PACKAGES.router:=\
 	ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot \
 	luci-app-wol curl ca-certificates luci-app-wireguard \
 	ipv6helper ip6tables-extra  ip6tables-mod-nat uuidgen luci-app-turboacc \
-	openssh-sftp-client openssh-sftp-server vim bash losetup
+	openssh-sftp-client openssh-sftp-server vim bash losetup luci-aura-init
 
 ifneq ($(DUMP),)
   all: dumpinfo
