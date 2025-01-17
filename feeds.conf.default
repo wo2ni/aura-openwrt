@@ -1,7 +1,7 @@
 src-git packages https://github.com/wo2ni/packages.git
 src-git luci https://github.com/wo2ni/luci.git
 src-git routing https://github.com/wo2ni/routing.git
-src-git telephony https://git.openwrt.org/feed/telephony.git
+src-git telephony https://github.com/wo2ni/telephony.git
 
 #src-git helloworld https://github.com/fw876/helloworld.git
 #src-git oui https://github.com/zhaojh329/oui.git
