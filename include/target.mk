@@ -53,14 +53,16 @@ DEFAULT_PACKAGES.nas:=\
 	mdadm
 
 # For router targets
-DEFAULT_PACKAGES.router:=\
+DEFAULT_PACKAGES.router:= \
 	dnsmasq-full firewall iptables ppp ppp-mod-pppoe \
 	block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun \
-	iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings luci luci-newapi \
-	ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot \
-	luci-app-wol curl ca-certificates luci-app-wireguard \
-	ipv6helper ip6tables-extra  ip6tables-mod-nat uuidgen luci-app-turboacc \
-	openssh-sftp-client openssh-sftp-server vim bash losetup luci-aura-init
+	iptables-mod-tproxy iptables-mod-extra ipset ip-full \
+	ddns-scripts_aliyun ddns-scripts_dnspod macchanger iperf3 htop \
+	curl ca-certificates vim jq \
+	ipv6helper ip6tables-extra ip6tables-mod-nat uuidgen \
+	openssh-sftp-client openssh-sftp-server vim bash losetup \
+	luci default-settings luci-aura-init luci-newapi \
+	luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-wol luci-app-wireguard luci-app-turboacc
 
 ifneq ($(DUMP),)
   all: dumpinfo
