@@ -218,7 +218,10 @@ define Device/glinet_gl-xe300
   SOC := qca9531
   DEVICE_VENDOR := GL.iNet
   DEVICE_MODEL := GL-XE300
-  DEVICE_PACKAGES := kmod-usb2 block-mount kmod-usb-serial-ch341
+  DEVICE_PACKAGES := kmod-usb2  block-mount \
+	kmod-usb-serial-ch341 kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim \
+	kmod-usb-net-cdc-ncm kmod-usb-net-cdc-subset kmod-usb-ohci kmod-usb-serial kmod-usb-serial-option \
+	kmod-usb-serial-wwan kmod-usb-uhci kmod-usb-wdm  kmod-usb-net-rndis
   KERNEL_SIZE := 4096k
   IMAGE_SIZE := 131072k
   PAGESIZE := 2048
