@@ -57,12 +57,12 @@ DEFAULT_PACKAGES.router:= \
 	dnsmasq-full firewall iptables ppp ppp-mod-pppoe \
 	block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun \
 	iptables-mod-tproxy iptables-mod-extra ipset ip-full \
-	ddns-scripts_aliyun ddns-scripts_dnspod macchanger iperf3 htop \
-	curl ca-certificates vim jq \
+	iperf3 htop deviceID \
+	curl ca-certificates jq \
 	ipv6helper ip6tables-extra ip6tables-mod-nat uuidgen \
 	openssh-sftp-client openssh-sftp-server vim bash losetup \
 	luci default-settings luci-aura-init luci-newapi \
-	luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-wol luci-app-wireguard luci-app-turboacc
+	luci-app-wireguard
 
 ifneq ($(DUMP),)
   all: dumpinfo
