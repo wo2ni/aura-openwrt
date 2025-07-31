@@ -183,7 +183,7 @@ detect_mac80211() {
 			set wireless.default_radio${devidx}.device=radio${devidx}
 			set wireless.default_radio${devidx}.network=lan
 			set wireless.default_radio${devidx}.mode=ap
-			set wireless.default_radio${devidx}.ssid=Aura-💗-$(/usr/bin/deviceID showid | cut -c 1-5)
+			set wireless.default_radio${devidx}.ssid=Aura-💗-$(/usr/bin/deviceID showid | tail -c 6)
                         set wireless.default_radio${devidx}.encryption=psk-mixed
                         set wireless.default_radio${devidx}.key=88888888
 
